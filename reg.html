@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    </p>
+
+    <p id="d1"></p>
+    <p id="d2">Visit intone networks! </p>
+
+    <p id="d3">this is sabitha </p>
+    <p id="d4"></p>
+    <p id="d5"></p>
+
+    <script>
+        let text = "Visit intone networks!";
+        let n = text.search("intone");
+        document.getElementById("d1").innerHTML = n;
+        function myFunction() {
+            let t1 = document.getElementById("d2").innerHTML;
+            document.getElementById("d2").innerHTML =
+                text.replace("intone", "stack");
+            // text.replace(/microsoft/i, "W3Schools");-- reg -exp replace
+
+            let t1 = document.getElementById("d3").innerHTML;
+            const pattern = /e/;
+            document.getElementById("d4").innerHTML = pattern.test(t1); // test()
+
+
+            const obj = /e/.exec("The best things in life are free!");
+            document.getElementById("d5").innerHTML =
+                "Found " + obj[0] + " in position " + obj.index + " in the text: " + obj.input;
+        }
+    </script>
+
+</body>
+
+</html>
